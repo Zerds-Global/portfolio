@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zerds.global</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >
+          <img src="./images/logo.png" alt="Zerds Logo" style="height: 40px; margin-right: 10px;">ZERDS</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#achievements">Achievements</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonials</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- Home Section Starts -->
+<section class="home pt-5 pb-5" id="home">
+  <div class="row justify-content-evenly align-middle">
+    
+    <!-- Text Content -->
+    <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+      <h2 style="color: #3f396d">
+        Welcome to <br /><span class="c-orange">Zerds</span>
+      </h2>
+      <p class="text-muted">
+        We are a leading <i>digital solutions company</i> specializing in <b>Web Development, Mobile App Development, Web3 Technology, and CyberSecurity</b>. With industry experience, we deliver <b>cutting-edge, secure, and scalable</b> solutions to empower businesses worldwide.
+      </p>
+      <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" onclick="scrollToFounders()">
+        Founded By
+      </button>
+      
+      
+    </div>
+
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/banner-01.webp" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+   <!-- Expertise Section Starts -->
+<section class="expertise mt-5" id="service">
+  <div class="heading text-center">
+    <small>Our Expertise</small>
+    <h3>
+      Provide a Wide Range of <br />
+      Digital Services
+    </h3>
+  </div>
+  <div class="row justify-content-evenly mt-5">
+    
+    <!-- Web Design -->
+    <div class="col-10 col-md-4" data-aos="fade-up">
+      <div class="service-card">
+        <div class="img">
+          <img src="images/service-icon1.png" class="w-25 img-fluid" alt="Web Design" />
+        </div>
+        <div class="content mt-3">
+          <h4>Web Design</h4>
+          <p class="text-muted">
+            Creating visually stunning and user-friendly website designs that enhance user experience.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Web Development -->
+    <div class="col-md-4 col-10" data-aos="fade-up">
+      <div class="service-card">
+        <div class="img">
+          <img src="images/service-icon2.png" class="w-25 img-fluid" alt="Web Development" />
+        </div>
+        <div class="content mt-3">
+          <h4>Web Development</h4>
+          <p class="text-muted">
+            Building high-performance, responsive, and secure websites tailored to your business needs.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Debugging -->
+    <div class="col-md-4 col-10" data-aos="fade-up">
+      <div class="service-card">
+        <div class="img">
+          <img src="images/service-icon3.png" class="w-25 img-fluid" alt="Debugging" />
+        </div>
+        <div class="content mt-3">
+          <h4>Debugging</h4>
+          <p class="text-muted">
+            Identifying and fixing software issues to ensure smooth and error-free functionality.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile App Development -->
+    <div class="col-md-4 col-10" data-aos="fade-up">
+      <div class="service-card">
+        <div class="img">
+          <img src="images/service-icon4.png" class="w-25 img-fluid" alt="Mobile App Development" />
+        </div>
+        <div class="content mt-3">
+          <h4>Mobile App Development</h4>
+          <p class="text-muted">
+            Developing custom iOS and Android apps with a focus on performance and user experience.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Web3 Technology -->
+    <div class="col-md-4 col-10" data-aos="fade-up">
+      <div class="service-card">
+        <div class="img">
+          <img src="images/service-icon5.png" class="w-25 img-fluid" alt="Web3 Technology" />
+        </div>
+        <div class="content mt-3">
+          <h4>Web3 Technology</h4>
+          <p class="text-muted">
+            Leveraging blockchain and decentralized applications to build next-generation digital solutions.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- CyberSecurity -->
+    <div class="col-md-4 col-10" data-aos="fade-up">
+      <div class="service-card">
+        <div class="img">
+          <img src="images/service-icon6.png" class="w-25 img-fluid" alt="CyberSecurity" />
+        </div>
+        <div class="content mt-3">
+          <h4>CyberSecurity</h4>
+          <p class="text-muted">
+            Implementing security measures to protect digital assets and mitigate cyber threats.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Expertise Section Ends Here -->
+
+    <!-- Project Section Starts Here -->
+<section class="projects-section" id="achievements">
+  <h1>Our Achievements</h1>
+  <div class="project-stats">
+      <div class="stat">
+          <h2>2+</h2>
+          <p>Years Experience</p>
+      </div>
+      <div class="stat">
+          <h2>5+</h2>
+          <p>Projects Completed</p>
+      </div>
+      <div class="stat">
+          <h2>5+</h2>
+          <p>Happy Clients</p>
+      </div>
+      <div class="stat">
+          <h2>15</h2>
+          <p>Team Members</p>
+      </div>
+      <div class="stat">
+          <h2>10+</h2>
+          <p>Global Reach</p>
+      </div>
+  </div>
+</section>
+<!-- Project Section Ends Here -->
+
+
+    <!-- testimonial section starts  -->
+    <section class="testimonial mt-5 pt-5" id="testimonial">
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 col-10" data-aos="slide-right">
+          <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+          <div class="heading">
+            <small>Testimonials</small>
+            <h3>Happy Clients Feedback</h3>
+            <!-- here we will use carousel element from bootstrap -->
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        The Expectations are satisfied by giving my project to this compny.
+                      </p>
+                      <h4>Aravindh</h4>
+                      <small class="fs-6 text-muted">Client</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Fantastic service! Will definitely work with them again!
+                      </p>
+                      <h4>Mothilal</h4>
+                      <small class="fs-6 text-muted">Client</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Highly skilled professionals! They deliver exactly what is promised.
+                      </p>
+                      <h4>Masthan</h4>
+                      <small class="fs-6 text-muted">Client</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Reliable and professional. Highly recommended for business solutions.
+                      </p>
+                      <h4>Gokul</h4>
+                      <small class="fs-6 text-muted">Client</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        Absolutely outstanding customer service and project execution!
+                      </p>
+                      <h4>Gopinath J</h4>
+                      <small class="fs-6 text-muted">Client</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="nextprev-btn rounded-pill prev-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <i class="bi bi-arrow-left-circle-fill prev"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="nextprev-btn rounded-pill next-btn"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <i class="bi bi-arrow-right-circle-fill next"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial ends here -->
+
+
+    <!-- Contact Section Starts -->
+<section class="contact py-5" id="contact">
+  <div class="heading text-center">
+    <small>Get in Touch</small>
+    <h3>Any Questions? Feel Free to Contact</h3>
+  </div>
+
+  <div class="row justify-content-evenly mt-5">
+    <!-- Contact Details -->
+    <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-geo-alt-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>Chennai</p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-telephone-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>+91 8838383300</p>
+          <p>+91 8015638835</p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-send-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>zerds.global@gmail.com</p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-globe-americas"></i>
+        </div>
+        <div class="col-11">
+          <p>zerds.global.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+      <form id="contact-form">
+        <div class="mb-3">
+          <input type="text" class="form-control" name="name" placeholder="Name" required />
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" name="email" placeholder="E-mail" required />
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" name="mobile" placeholder="Mobile No." required />
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" name="message" placeholder="Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- Contact Section Ends Here -->
+
+<!-- EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Footer Section Starts -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <!-- Existing Footer Content -->
+    <div class="footer-links">
+      <h3>About</h3>
+      <div class="link-group">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#achievements">Achievements</a>
+        <div class="vr"></div>
+        <a href="#testimonial">Testimonials</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+    </div>
+<br>
+<br>
+    <!-- Founder Information -->
+    <div class="founder-info">
+      <p>Founded by <strong>Vasanth S</strong>, && <strong>Balaji E</strong> a visionary leaders dedicated to innovation and excellence.</p>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <a href="https://github.com/Zerds-Global" target="_blank" class="social-icon"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/zerds-8297a6351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.instagram.com/zerds.global?igsh=amMwYnBpZWd5NGdu" target="_blank" class="social-icon"><i class="bi bi-instagram"></i></a>
+    </div>
+
+    <!-- Copyright Information -->
+    <p>&copy; 2025 Zerds. All Rights Reserved.</p>
+  </div>
+</footer>
+<!-- Footer Section Ends -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
