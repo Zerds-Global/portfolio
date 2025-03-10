@@ -7,12 +7,6 @@ html, body {
     padding: 0;
 }
 
-/* Debugging: Highlight overflowing elements */
-@media (max-width: 768px) {
-    body * {
-        outline: 1px solid red; /* Uncomment this line to check for problematic elements */
-    }
-}
 
 /* appling google font over the website  */
 body{
